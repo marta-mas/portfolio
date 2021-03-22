@@ -8,7 +8,6 @@
 }
 html{
     scroll-behavior: smooth;
-    
 }
 
 /* custom scroll bar */
@@ -35,11 +34,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .work, .contact, footer{
+.about, .work, .first, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
 .work .work-content,
+.first .first-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -292,6 +292,52 @@ section .title::after{
     color: #fff;
 }
 .work .work-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+.first{
+    color:#fff;
+    background: #111;
+}
+.first .title::before,
+.title::before{
+    background: #fff;
+}
+.first .title::after,
+.title::after{
+    background: #111;
+    content: "My projects";
+}
+.first .first-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.first .first-content .card:hover{
+    background: crimson;
+}
+.first .first-content .card .box{
+    transition: all 0.3s ease;
+}
+.first .first-content .card:hover .box{
+    transform: scale(1.05);
+}
+.first .first-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.first .first-content .card:hover i{
+    color: #fff;
+}
+.first .first-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
